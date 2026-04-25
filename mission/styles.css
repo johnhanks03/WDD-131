@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background-color: white;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #111;
+}
+.mission-card {
+  width: 80%;
+  max-width: 850px;
+  margin: 35px auto;
+  padding: 90px 120px 70px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+h2 {
+  margin: 22px auto 60px;
+  padding-bottom: 8px;
+  width: 80%;
+  border-bottom: 1px solid #ddd;
+  color: #2f74b5;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.content {
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.italic {
+  margin-top: 35px;
+  font-style: italic;
+}
+
+ol {
+  padding-left: 48px;
+}
+
+li {
+  margin-bottom: 28px;
+}
+
+.logo {
+  display: block;
+  width: 150px;
+  margin: 70px auto 0;
+}
