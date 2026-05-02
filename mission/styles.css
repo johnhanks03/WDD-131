@@ -57,3 +57,21 @@ li {
   width: 150px;
   margin: 70px auto 0;
 }
+.dark {
+  background-color: #222;
+  color: white;
+}
+
+.dark .mission-card {
+  border-color: white;
+}
+
+.dark h2 {
+  color: #7db5e8;
+}
+
+select {
+  display: block;
+  margin: 20px auto;
+  padding: 8px;
+}
