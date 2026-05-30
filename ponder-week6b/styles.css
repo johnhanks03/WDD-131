@@ -1,0 +1,46 @@
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 1rem 0;
+}
+
+#movie-list {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.movie-card {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.movie-card img {
+  width: 150px;
+  height: auto;
+}
+
+.movie-info h2 {
+  margin-top: 0;
+  color: #8b1e3f;
+}
+
+.movie-info p {
+  margin: 6px 0;
+}
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0;
+}
