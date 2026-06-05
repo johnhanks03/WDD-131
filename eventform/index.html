@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Ticket</title>
+
+  <!-- favicon in same folder named favicon.ico -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <h1>Event Ticket</h1>
+
+      <form id="ticketForm" novalidate>
+        <div class="field-row">
+          <label for="firstName">First Name</label>
+          <input id="firstName" name="firstName" type="text" required>
+        </div>
+
+        <div class="field-row">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" name="lastName" type="text" required>
+        </div>
+
+        <div class="field-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+
+        <div class="field-row">
+          <label for="type">Type</label>
+          <select id="type" name="type" required>
+            <option value="">Choose one</option>
+            <option value="student">Student</option>
+            <option value="guest">Guest</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <label for="eventDate">Event Date</label>
+          <input id="eventDate" name="eventDate" type="date" required>
+        </div>
+
+        <!-- hidden extra info for student or guest -->
+        <div id="extraInfo" class="field-row hidden">
+          <label id="extraLabel" for="extraInput">Student I#</label>
+          <input id="extraInput" name="extraInput" type="text">
+        </div>
+
+        <button type="submit" class="btn">Create Ticket</button>
+      </form>
+
+      <!-- error and success areas -->
+      <div id="errors" class="messages"></div>
+      <div id="ticketResult" class="ticket-result"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
