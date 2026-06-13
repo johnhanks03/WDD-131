@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+}
+
+main {
+  max-width: 700px;
+}
+
+label,
+input,
+button {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+input {
+  padding: 0.5rem;
+  width: 200px;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  border: 1px solid #999;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+thead {
+  background-color: #eee;
+}
