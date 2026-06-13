@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Character Card | John Hanks</title>
+  <meta name="description" content="A WDD 131 character card built with a JavaScript object and methods." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Character Card | John Hanks" />
+  <meta property="og:description" content="A WDD 131 character card built with a JavaScript object and methods." />
+  <meta property="og:url" content="https://johnhanks03.github.io/WDD-131/charactercard/" />
+  <meta property="og:image" content="https://johnhanks03.github.io/WDD-131/charactercard/images/character.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Character Card | John Hanks" />
+  <meta name="twitter:description" content="A WDD 131 character card built with a JavaScript object and methods." />
+  <meta name="twitter:image" content="https://johnhanks03.github.io/WDD-131/charactercard/images/character.png" />
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <img id="characterImage" src="images/character.png" alt="Character portrait" class="character-image" />
+
+    <div class="card-content">
+      <h1 id="characterName"></h1>
+      <p><strong>Class:</strong> <span id="characterClass"></span></p>
+      <p><strong>Level:</strong> <span id="characterLevel"></span></p>
+      <p><strong>Health:</strong> <span id="characterHealth"></span></p>
+
+      <div class="button-row">
+        <button id="attackBtn">Attacked</button>
+        <button id="levelUpBtn">Level Up</button>
+      </div>
+
+      <p id="message"></p>
+    </div>
+  </main>
+</body>
+</html>
