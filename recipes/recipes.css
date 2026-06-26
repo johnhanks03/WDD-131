@@ -24,7 +24,7 @@ img {
 .site-header,
 .page-content,
 .site-footer {
-  width: min(92%, 900px);
+  width: min(92%, 950px);
   margin: 0 auto;
 }
 
@@ -95,12 +95,18 @@ h1 {
   height: 24px;
 }
 
+#recipe-container {
+  display: grid;
+  gap: 1rem;
+}
+
 .recipe-card {
   display: flex;
   flex-direction: column;
   border: 1px solid #8f8f8f;
   padding: 0.8rem;
   gap: 1rem;
+  background: #fff;
 }
 
 .recipe-image img {
@@ -114,6 +120,12 @@ h1 {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.45rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
 .tag {
@@ -131,15 +143,26 @@ h2 {
 
 .rating {
   font-size: 1rem;
-  line-height: 1;
+  line-height: 1.4;
 }
 
 .description {
-  display: none;
   margin: 0;
   font-size: 0.92rem;
   line-height: 1.5;
   max-width: 34ch;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+.empty-message {
+  border: 1px solid #8f8f8f;
+  padding: 1rem;
+  background: #fff;
 }
 
 .site-footer {
@@ -194,10 +217,6 @@ h2 {
   .recipe-image,
   .recipe-info {
     flex: 1 1 0;
-  }
-
-  .description {
-    display: block;
   }
 
   .site-footer {
